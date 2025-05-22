@@ -2,8 +2,15 @@
 import React from "react";
 
 function Keypad (){
-    return (
-        <div></div>
+    function inputData () {
+        console.log("Entering password...")
+    }
+    return(
+        <input 
+        type="password" 
+        onChange={inputData}
+        onClick={inputData}
+        />
     )
 }
 

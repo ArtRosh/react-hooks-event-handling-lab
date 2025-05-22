@@ -2,8 +2,18 @@
 import React from "react";
 
 function EyesOnMe () {
+    function eyesOnMe (){
+        console.log("Good!")
+    }
+
+    function whenBlur () {
+        console.log("Hey! Eyes on me!")
+    }
     return (
-        <div></div>
+        <button
+        onFocus={eyesOnMe}
+        onBlur={whenBlur}
+        >"Eyes on me"</button>
     )
 }
 
